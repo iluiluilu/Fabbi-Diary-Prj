@@ -17,6 +17,11 @@ class AppServiceProvider extends ServiceProvider
             \App\Repositories\UserRepository\UserRepositoryInterface::class,
             \App\Repositories\UserRepository\UserRepositoryClass::class
         );
+
+        $this->app->bind(
+            \App\Repositories\UserRepository\DiaryRepositoryInterface::class,
+            \App\Repositories\UserRepository\DiaryRepositoryClass::class
+        );
     }
 
     /**
